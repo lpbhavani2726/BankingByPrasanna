@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANK REGISTER FORM</title>
+    <link rel="stylesheet" href="/css/regstyle.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="bank">CD BANK</h1>
+        <nav class="navigation">
+          <a href="/html/Home.html">Home</a>
+          <a href="/html/login.html">Login</a>
+          <a href="/html/Contact.html">Contact Us</a>
+        </nav>       
+    </header>
+
+    <section class="container">
+      <div class="heading">
+        <h2><center>Registration Form</center></h2>
+      </div>  
+      <form action="#" class="form">
+        <div class="input-box">
+          <label> </label>
+          <input type="text" placeholder="FULL NAME" required />
+        </div>
+
+        <div class="input-box">
+          <label> </label>
+          <input type="text" placeholder="ACCOUNT NUMBER" required />
+        </div>
+
+        <div class="input-box">
+          <label> </label>
+          <input type="text" placeholder="IFSC CODE" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label> </label>
+            <input type="number" placeholder="PHONE NUMBER" required />
+          </div>
+
+          <div class="input-box">
+            <label> </label>
+            <input type="date" placeholder="DATE OF BIRTH" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3> </h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">MALE</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">FEMALE</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">PERFER TO NO SAY</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label> </label>
+          <input type="text" placeholder="STREET NAME" required />
+          <input type="text" placeholder="LANK MARK" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>STATE</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Tamil Naidu</option>
+                <option>Kerala</option>
+              </select>
+            </div>
+            <input type="text" placeholder="CITY" required />
+          </div>
+          <div class="column">
+            <div class="input-box address">
+            <label> </label>
+            <input type="text" placeholder="PASSWORD" required />
+            <input type="text" placeholder="CONFIRM PASSWORD" required />
+          </div>
+        </div>
+        <button>REGISTER</button>
+      </form>
+    </section>
+  </body>
+</html>

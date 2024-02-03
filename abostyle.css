@@ -1,0 +1,84 @@
+*{
+    font-family: serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/images/abobg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;     
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 5px 5px; 
+}
+
+.bank{
+    font-size: 3.5rem;
+    color: white;  
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;  
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    background-color: hwb(0 100% 0%);
+    border-radius: 5px;
+    bottom: -6px;
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform: scale(1); 
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    border: 2px solid hwb(234 0% 67%);
+    background: rgba(0, 0, 0, 0, 8);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.about{
+    font-style: 1.3px;
+    color: aliceblue;
+}
